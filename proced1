@@ -1,0 +1,28 @@
+FUNCTION dot_product(VAR v1,v2: ARRAY_OF INTEGER) : INTEGER
+VAR
+    n,i,j,resultat:INTEGER;
+    
+BEGIN
+    resultat:=0;
+    n:=v1.length;
+    IF (v2.length=n) THEN
+        FOR i FROM 0 TO n-1 STEP 1  DO
+        resultat:=resultat+v1[i]*v2[i];
+    END_FOR
+    ELSE
+        Write ("Les deux tableaux doivent avoir la même longueur")
+        BREAK;
+    END_IF
+    
+    RETURN resultat ;
+END
+
+
+
+ALGORITHM proced1
+
+VAR
+    set_declarations
+BEGIN
+    set_instructions
+END
